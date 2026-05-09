@@ -28,164 +28,152 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ШАПКА */
   .full-width-header {
     background: var(--plum-dark);
     width: 100%;
-    padding: clamp(40px, 8vw, 60px) 24px;
+    padding: clamp(30px, 7vw, 50px) 20px;
     text-align: center;
     border-bottom: 1px solid var(--gold-main);
-    box-shadow: 0 10px 30px rgba(42, 14, 38, 0.2);
   }
 
   .full-width-header h1 { 
-    font-size: clamp(26px, 6vw, 52px); 
+    font-size: clamp(24px, 6vw, 48px); 
     color: var(--gold-main); 
-    letter-spacing: 0.08em; 
+    letter-spacing: 0.05em; 
     text-transform: uppercase; 
-    margin-bottom: 15px; 
+    margin-bottom: 8px; 
   }
 
   .full-width-header .sub-title { 
     color: var(--ivory-text); 
-    font-size: clamp(18px, 4vw, 24px); 
-    opacity: 0.9; 
+    font-size: clamp(16px, 4vw, 22px); 
+    opacity: 0.85; 
     letter-spacing: 0.12em; 
   }
 
-  .container { max-width: 850px; margin: 0 auto; padding: 0 24px; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
 
-  .intro-section { text-align: center; margin: clamp(35px, 7vw, 60px) 0; }
+  .intro-section { text-align: center; margin: 30px 0 40px; }
   
-  /* МАНИФЕСТ (ТЕПЕРЬ ВВЕРХУ) */
   .manifesto { 
-    font-size: clamp(20px, 5vw, 26px); 
+    font-size: clamp(19px, 5vw, 24px); 
     color: var(--plum-dark); 
     font-weight: 700; 
-    padding: 25px 40px;
+    padding: 15px 30px;
     display: inline-block;
     position: relative;
-    background: linear-gradient(to right, transparent, rgba(200, 169, 107, 0.12), transparent);
-    border-radius: 50px;
-    margin-bottom: clamp(30px, 6vw, 45px);
+    background: linear-gradient(to right, transparent, rgba(200, 169, 107, 0.15), transparent);
+    margin-bottom: 25px;
   }
 
-  .manifesto::before, .manifesto::after {
-    content: "«";
-    color: var(--gold-main);
-    font-size: 45px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6;
-    font-family: serif;
+  /* ФРАЗА С АКЦЕНТОМ И ОТСТУПОМ */
+  .intro-highlight {
+    font-size: clamp(18px, 4.5vw, 22px);
+    font-weight: 700;
+    color: var(--plum-dark);
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1.4;
   }
-  .manifesto::before { left: 0px; }
-  .manifesto::after { content: "»"; right: 0px; }
 
-  /* ТЕКСТ (ТЕПЕРЬ НИЖЕ) */
   .intro-text { 
-    font-size: clamp(18px, 4vw, 23px); 
-    line-height: 1.6; 
+    font-size: clamp(17px, 4vw, 19px); 
+    line-height: 1.5; 
     color: var(--plum-text); 
     white-space: pre-line; 
   }
-  .intro-text strong { font-weight: 700; color: var(--plum-dark); }
 
   .kicker {
-    font-size: clamp(24px, 5vw, 32px);
+    font-size: clamp(22px, 5vw, 28px);
     color: var(--plum-dark);
-    margin: clamp(45px, 8vw, 65px) 0 clamp(30px, 5vw, 40px);
+    margin: 45px 0 25px;
     text-align: center;
     display: block;
     font-weight: 700;
   }
 
   .program-step {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba(200, 169, 107, 0.2);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(200, 169, 107, 0.15);
   }
   .program-step h3 { 
     color: var(--gold-deep); 
-    font-size: clamp(22px, 5vw, 28px); 
-    margin-bottom: 12px; 
+    font-size: clamp(20px, 5vw, 24px); 
+    margin-bottom: 8px; 
   }
   .program-step p { 
-    font-size: clamp(17px, 4vw, 21px); 
-    opacity: 0.95; 
-    white-space: pre-line; 
+    font-size: clamp(16px, 4vw, 18px); 
+    opacity: 0.9; 
   }
 
   .results-card { 
     background: var(--plum-dark); 
     color: var(--ivory-text);
-    padding: clamp(35px, 6vw, 50px) clamp(25px, 5vw, 40px);
-    border-radius: 24px;
+    padding: 35px 25px;
+    border-radius: 18px;
     border: 1px solid var(--gold-main);
-    margin: 60px auto;
-    max-width: 700px;
+    margin: 40px 0;
   }
   .results-title { 
-    font-size: clamp(26px, 5vw, 34px); 
-    margin-bottom: 35px; 
+    font-size: clamp(22px, 5vw, 28px); 
+    margin-bottom: 25px; 
     color: var(--gold-main); 
     text-align: center; 
-    text-transform: uppercase; 
+    text-transform: uppercase;
   }
   
-  .benefit-item { margin-bottom: 30px; text-align: center; }
+  .benefit-item { margin-bottom: 25px; text-align: center; }
   .benefit-item strong { 
     display: block; 
-    font-size: clamp(22px, 5vw, 28px); 
+    font-size: clamp(18px, 5vw, 21px); 
     color: var(--gold-main); 
-    margin-bottom: 12px; 
+    margin-bottom: 8px; 
   }
-  .benefit-item p { font-size: clamp(18px, 4vw, 22px); opacity: 0.9; line-height: 1.5; }
+  .benefit-item p { font-size: clamp(16px, 4vw, 18px); }
 
-  .quote-container { padding: 30px 0; text-align: center; }
+  .quote-container { padding: 25px 0; text-align: center; }
   .main-quote { 
-    font-size: clamp(24px, 6vw, 42px); 
+    font-size: clamp(20px, 5vw, 32px); 
     color: var(--plum-dark); 
-    line-height: 1.3; 
     font-weight: 600; 
   }
   .mark-beige {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, var(--marker-beige) 35%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, var(--marker-beige) 30%);
     display: inline;
-    padding: 0 4px;
   }
 
-  .price-section { padding: 30px 0 80px; text-align: center; }
   .price-card {
-    max-width: 520px;
-    margin: 0 auto;
+    max-width: 420px;
+    margin: 30px auto 70px;
     background: var(--plum-dark);
-    border: 1px solid var(--gold-main);
-    padding: 45px 25px;
-    border-radius: 24px;
+    padding: 35px 20px;
+    border-radius: 20px;
     color: var(--ivory-text);
+    text-align: center;
+    border: 1px solid var(--gold-main);
   }
-  .price-title-gold { font-size: 24px; color: var(--gold-main); margin-bottom: 5px; display: block; text-transform: uppercase; }
-  .price-val { font-size: clamp(40px, 8vw, 52px); color: var(--gold-main); margin: 15px 0; font-weight: 600; display: block; }
-  .price-meta { font-size: 18px; opacity: 0.7; margin-bottom: 35px; display: block; }
-
+  .price-val { 
+    font-size: clamp(36px, 8vw, 46px); 
+    color: var(--gold-main); 
+    margin: 10px 0; 
+    display: block; 
+    font-weight: 600;
+  }
   .cta-button {
     display: inline-block;
     background: var(--gold-main);
     color: var(--plum-dark);
-    padding: 16px 35px;
-    font-size: 15px;
-    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 700;
     text-decoration: none;
     border-radius: 50px;
     text-transform: uppercase;
-    transition: 0.3s ease;
   }
 
-  @media (max-width: 800px) {
-    .manifesto { white-space: normal; padding: 15px 25px; border-radius: 20px; }
-    .manifesto::before, .manifesto::after { display: none; }
+  @media (max-width: 600px) {
+    .manifesto { padding: 12px 20px; border-radius: 12px; }
     .container { padding: 0 16px; }
   }
 </style>
@@ -200,15 +188,16 @@
 <div class="container">
   
   <section class="intro-section">
+    <div class="intro-text">
+      <span class="intro-highlight">Формат для женщин, которые застряли в сценарии «хорошей девочки».</span>
+      
+      Внешне вы успешны, но внутри всё еще живет ожидание:
+      Что придет «Он» — спаситель, принц или Иисус Христос в облике мужчины —
+      И наконец-то сделает вас счастливой, спокойной и богатой.
+    </div>
+    
     <div class="manifesto">
       Пора выбросить костыли и стать взрослой женщиной.
-    </div>
-
-    <div class="intro-text">
-<strong>Формат для женщин, которые застряли в сценарии «хорошей девочки».</strong>
-Внешне вы успешны, но внутри всё еще живет ожидание:
-Что придет «Он» — спаситель, принц или Иисус Христос в облике мужчины —
-И наконец-то сделает вас счастливой, спокойной и богатой.
     </div>
   </section>
 
@@ -269,7 +258,6 @@
     <section class="price-section">
       <div class="price-card">
         <span class="price-title-gold">ПАКЕТ «Интенсивный запуск»</span>
-        <span class="price-meta">Курс из 5 глубоких сессий</span>
         <span class="price-val">400 €</span>
         <a href="https://t.me/astrolog_prognozi" class="cta-button">Стать зрелой и свободной</a>
       </div>
